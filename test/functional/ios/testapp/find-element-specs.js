@@ -77,9 +77,10 @@ describe('testapp - find element', function () {
   it('should get an error when strategy doesnt exist', function (done) {
     driver.elementByCss('UIAButton')
       .catch(function (err) {
-        err.cause.value.message.should.equal("Invalid locator strategy: css selector");
+        err.cause.value.message.should.equal(
+          "Locator Strategy \"css selector\" is not supported for this session");
         throw err;
-      }).should.be.rejectedWith(/status: 9/)
+      }).should.be.rejectedWith(/status: 32/)
       .nodeify(done);
   });
 
@@ -119,9 +120,9 @@ describe('testapp - find element', function () {
   it('should not find element by incomplete class name but return respective error code', function (done) {
     driver.elementsByClassName('notAValidReference')
       .catch(function (err) {
-        err['jsonwire-error'].summary.should.eql('UnknownError');
+        err['jsonwire-error'].summary.should.eql('InvalidSelector');
         throw err;
-      }).should.be.rejectedWith(/status: 13/)
+      }).should.be.rejectedWith(/status: 32/)
       .nodeify(done);
   });
 
