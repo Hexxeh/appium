@@ -10,7 +10,7 @@
     },
     "appium-adb": {
       "version": "1.7.5",
-      "resolved": "https://github.com/Hexxeh/appium/tarball/fixed-adb",
+      "resolved": "https://github.com/Hexxeh/appium-adb/tarball/threadtime",
       "dependencies": {
         "appium-support": {
           "version": "0.0.3",
