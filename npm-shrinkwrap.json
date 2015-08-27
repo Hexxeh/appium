@@ -10,7 +10,7 @@
     },
     "appium-adb": {
       "version": "1.7.5",
-      "resolved": "https://registry.npmjs.org/appium-adb/-/appium-adb-1.7.5.tgz",
+      "resolved": "https://github.com/Hexxeh/appium/tarball/fixed-adb",
       "dependencies": {
         "appium-support": {
           "version": "0.0.3",
