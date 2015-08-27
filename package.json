@@ -11,7 +11,7 @@
     "firefoxos",
     "testing"
   ],
-  "version": "1.4.10",
+  "version": "1.4.10-pebble",
   "author": "https://github.com/appium",
   "licenses": [
     {
@@ -36,8 +36,8 @@
     "authorize_ios": "./bin/authorize-ios.js"
   },
   "directories": {
-    "lib": "./lib",
-    "doc": "./docs"
+    "doc": "docs",
+    "test": "test"
   },
   "dependencies": {
     "adm-zip": "~0.4.7",
@@ -105,7 +105,8 @@
     "ws": "~0.7.1",
     "xml2js": "~0.4.5",
     "xmldom": "~0.1.19",
-    "xpath": "0.0.9"
+    "xpath": "0.0.9",
+    "udidetect": "^1.0.7"
   },
   "scripts": {
     "test": "grunt travis"
@@ -151,5 +152,7 @@
   },
   "optionalDependencies": {
     "udidetect": "^1.0.7"
-  }
+  },
+  "homepage": "https://github.com/appium/appium",
+  "license": "ISC"
 }
