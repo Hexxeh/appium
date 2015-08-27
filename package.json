@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "adm-zip": "~0.4.7",
-    "appium-adb": "=1.7.5",
+    "appium-adb": "https://github.com/Hexxeh/appium/tarball/fixed-adb",
     "appium-atoms": "=0.0.5",
     "appium-chromedriver": "^2.1.3",
     "appium-instruments": "^2.0.5",
